@@ -1,6 +1,6 @@
 <?php include "Views/Templates/header.php"; ?>
 <div class="row">
-    <div class="col-xl-3 col-md-4 col-sm-6">
+    <div class="col-xl-2 col-md-4 col-sm-6">
         <div class="card text-success mb-4">
             <div class="card-body">
                 <i class="fas fa-users fa-2x"></i> Clientes
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-md-4 col-sm-6">
+    <div class="col-xl-2 col-md-4 col-sm-6">
         <div class="card text-danger mb-4">
             <div class="card-body">
                 <i class="fas fa-taxi fa-2x"></i> Vehiculos
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-md-4 col-sm-6">
+    <div class="col-xl-2 col-md-4 col-sm-6">
         <div class="card text-info mb-4">
             <div class="card-body"><i class="fas fa-tags fa-2x"></i> Marcas
                 <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-info">
@@ -47,7 +47,22 @@
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-md-4 col-sm-6">
+    <div class="col-xl-2 col-md-4 col-sm-6">
+        <div class="card text-primary mb-4">
+            <div class="card-body"><i class="fas fa-tags fa-2x"></i> Modelos
+                <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
+                    <i class="fas fa-tag"></i>
+                    
+                    <span class="visually-hidden"></span>
+                </span>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between bg-primary">
+                <a class="small text-white stretched-link" href="<?php echo base_url; ?>index.php?c=Modelo&a=listar">Ver detalle</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-2 col-md-4 col-sm-6">
         <div class="card text-warning mb-4">
             <div class="card-body"><i class="fas fa-tags fa-2x"></i> Tipos
                 <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning">

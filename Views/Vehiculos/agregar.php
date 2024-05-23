@@ -25,7 +25,7 @@
                         <label for="direccion"><i class="fas fa-home"></i> Modelo <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">
-                        <input id="fechaNacimiento" type="date" class="form-control" name="date" rows="3" placeholder="1994-05-15" required></input>
+                        <input id="fechaNacimiento" type="text" class="form-control" name="date" rows="3" placeholder="1994-05-15" required></input>
                         <label for="direccion"><i class="fas fa-home"></i> Año <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">

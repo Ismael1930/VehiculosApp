@@ -40,6 +40,7 @@
                             <div class="collapse" id="collapseVehiculos" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="<?php echo base_url; ?>index.php?c=Marca&a=listar">Marcas</a>
+                                    <a class="nav-link" href="<?php echo base_url; ?>index.php?c=Modelo&a=listar">Modelos</a>
                                     <a class="nav-link" href="<?php echo base_url; ?>index.php?c=Tipo&a=listar">Tipos</a>
                                     <a class="nav-link" href="<?php echo base_url; ?>index.php?c=Vehiculo&a=listar">Vehiculos</a>
                                 </nav>
