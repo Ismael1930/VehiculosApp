@@ -1,6 +1,6 @@
 <?php include "Views/Templates/header.php"; ?>
 
-<div  style="display: block;">
+<div style="display: block;">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header bg-info text-white">
@@ -17,11 +17,23 @@
                         <label for="nombre"><i class="fas fa-list"></i> Placa <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">
-                        <input id="apellido" class="form-control" type="text" name="marca" placeholder="Jiemez" required>
+                        <select id="marca" name="marca" class="form-select">
+                            <?php
+                            foreach ($marcas as $marca) {
+                                echo '<option value="' . $marca['MarcaId'] . '">' . $marca['Nombre'] . '</option>';
+                            }
+                            ?>
+                        </select>
                         <label for="apellido"><i class="fas fa-phone"></i> Marca <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">
-                        <input id="fechaNacimiento" type="text" class="form-control" name="modelo" rows="3" placeholder="1994-05-15" required></input>
+                        <select id="marca" name="modelo" class="form-select">
+                            <?php
+                            foreach ($modelos as $modelo) {
+                                echo '<option value="' . $modelo['ModeloId'] . '">' . $modelo['nombre'] . '</option>';
+                            }
+                            ?>
+                        </select>
                         <label for="direccion"><i class="fas fa-home"></i> Modelo <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">
@@ -33,7 +45,13 @@
                         <label for="direccion"><i class="fas fa-home"></i> Color <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">
-                        <input id="fechaNacimiento" type="text" class="form-control" name="cliente" rows="3" placeholder="1994-05-15" required></input>
+                    <select id="marca" name="cliente" class="form-select">
+                            <?php
+                            foreach ($clientes as $cliente) {
+                                echo '<option value="' . $cliente['ClienteId'] . '">' . $cliente['Nombre'] . '</option>';
+                            }
+                            ?>
+                        </select>
                         <label for="direccion"><i class="fas fa-home"></i> Cliente <span class="text-danger fw-bold">*</span> </label>
                     </div>
                 </div>

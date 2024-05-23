@@ -44,8 +44,8 @@
                         <label for="apellido"><i class="fas fa-phone"></i> Apellido <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="La fecha de Nacimiento es requerida">
-                        <input id="fechaNacimiento" type="date" class="form-control" value="<?php $cliente['FechaNacimiento'] ?>" name="fechaNacimiento" rows="3" placeholder="1994-05-15" required></input>
-                        <label for="direccion"><i class="fas fa-home"></i> fechaNacimiento <span class="text-danger fw-bold">*</span> </label>
+                        <input id="fechaNacimiento" type="date" class="form-control" value="<?php echo $cliente['FechaNacimiento'] ?>" name="fechaNacimiento"  placeholder="1994-05-15" required></input>
+                        <label for="fechaNacimiento"><i class="fas fa-home"></i> fechaNacimiento <span class="text-danger fw-bold">*</span> </label>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -19,7 +19,7 @@
                     <tr>
                         <td><?php echo $modelo['ModeloId']; ?></td>
                         <td><?php echo $modelo['nombre']; ?></td>
-                        <td><?php echo 'Marca'; ?></td>
+                        <td><?php echo $modelo['nombreMarca']; ?></td>
                         <td>
                             <?php echo "
                                 <a href='index.php?c=modelo&a=modificar&id=" . $modelo['ModeloId'] . "' class='btn btn-primary mx-2'>editar</a>

@@ -17,7 +17,13 @@
                         <label for="nombre"><i class="fas fa-list"></i> Nombre <span class="text-danger fw-bold">*</span> </label>
                     </div>
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">
-                        <input id="nombre" class="form-control" type="text" name="marca" value="<?php echo 'Marca'?>" placeholder="Nombre de la Marca" required>
+                    <select id="marca" name="marca" class="form-select">
+                        <?php
+                        foreach ($marcas as $marca) {
+                            echo '<option value="' . $marca['MarcaId'] . '">' . $marca['Nombre'] . '</option>';
+                        }
+                        ?>
+                    </select>
                         <label for="nombre"><i class="fas fa-list"></i> Marca <span class="text-danger fw-bold">*</span> </label>
                     </div>
                 </div>

@@ -11,7 +11,9 @@ class ModeloModel {
 
     // Obtener todos los Modelos
     function getAllModelos() {
-        $sql = "SELECT * FROM modelo";
+        $sql = "SELECT m.*, ma.nombre AS nombreMarca
+        FROM modelo m
+        LEFT JOIN marca ma ON m.marcaId = ma.MarcaId";
         return $this->db->select($sql);
     }
 
@@ -23,14 +25,14 @@ class ModeloModel {
     }
 
     // Agregar un nuevo Modelo
-    function addModelo($nombre, $marcaId = 1) {
+    function addModelo($nombre, $marcaId) {
         $sql = "INSERT INTO modelo (nombre, marcaId) VALUES (?, ?)";
         $data = [$nombre, $marcaId];
         $this->db->execute($sql, $data);
     }
 
     // Actualizar los datos de un Modelo
-    function updateModelo($ModeloId, $nombre, $marcaId = 1) {
+    function updateModelo($ModeloId, $nombre, $marcaId) {
         $sql = "UPDATE modelo SET nombre = ?, MarcaId=? WHERE ModeloId = ?";
         $data = [$nombre, $marcaId, $ModeloId];
         $this->db->execute($sql, $data);

@@ -1,6 +1,6 @@
 <?php include "Views/Templates/header.php"; ?>
 
-<div  style="display: block;">
+<div style="display: block;">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header bg-info text-white">
@@ -15,7 +15,13 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-floating mb-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="El campo es requerido">
-                        <input id="nombre" class="form-control" type="text" name="marca" placeholder="Nombre de la marca" required>
+                        <select id="marca" name="marca" class="form-select">
+                            <?php
+                            foreach ($marcas as $marca) {
+                                echo '<option value="' . $marca['MarcaId'] . '">' . $marca['Nombre'] . '</option>';
+                            }
+                            ?>
+                        </select>
                         <label for="nombre"><i class="fas fa-list"></i> Marca <span class="text-danger fw-bold">*</span> </label>
                     </div>
                 </div>
